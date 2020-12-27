@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "iosevka-light";
+  src: url(font/iosevka-light.ttf) format("truetype");
+}
+
+body {
+  height: 230px;
+  width: 250px;
+  padding: 1rem;
+  background-color: black;
+  border: 4px solid lime;
+  color: lime;
+  font-size: 1rem;
+  font-family: iosevka-light;
+}
+
+#box {
+  display: flex;
+  flex-direction: column;
+}
+
+div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 7px;
+  align-items: center;
+}
+
+label {
+  flex: 1;
+  text-align: left;
+}
+
+input {
+  color: lime;
+  text-align: left;
+  align-items: center;
+  background-color: black;
+  padding: 5px;
+  font-family: iosevka-light;
+}
+
+input:focus {
+  color: lime;
+}
+
+#orderbook {
+  padding: 0px;
+}
+
+#bookbutton {
+  background: black;
+  color: lime;
+  border: none;
+  position: relative;
+  height: 30px;
+  font-size: 1.2rem;
+  margin-top: 5px;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+  font-family: iosevka-light;
+  font-style: normal;
+  text-align: center;
+}
+
+#bookbutton:hover {
+  background: black;
+  color: lime;
+}
+#bookbutton:before,
+#bookbutton:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 3px;
+  width: 0;
+  background: lime;
+  transition: 400ms ease all;
+}
+#bookbutton:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+#bookbutton:hover:before,
+#bookbutton:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+
+#copy {
+  background: black;
+  color: lime;
+  border: none;
+  position: relative;
+  height: 40px;
+  font-size: 1em;
+  margin-top: 5px;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+  font-family: iosevka-light;
+}
+#copy:hover {
+  background: black;
+  color: lime;
+}
+#copy:before,
+#copy:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: lime;
+  transition: 400ms ease all;
+}
+#copy:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+#copy:hover:before,
+#copy:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}

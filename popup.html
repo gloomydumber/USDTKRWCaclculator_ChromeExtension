@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="jquery-3.5.1.min.js"></script>
+  </head>
+  <body>
+    <div id="box">
+      <div class="col">
+        <label class="active" for="BTC">BTC</label>
+        <input placeholder="0" id="BTC" type="text" class="val" />
+      </div>
+      <div class="col">
+        <label class="active" for="USDT">USDT</label>
+        <input placeholder="0" id="USDT" type="text" class="val" />
+      </div>
+      <div class="col">
+        <label class="active" for="KRW">KRW</label>
+        <input placeholder="0" id="KRW" type="text" class="val" />
+      </div>
+      <div class="col">
+        <label>MEMO</label>
+        <input
+          placeholder="Memo here 📑"
+          id="memo"
+          type="text"
+          spellcheck="false"
+        />
+      </div>
+      <i id="bookbutton">TRACE EXCHANGE 💱</i>
+      <button id="copy" class="" style="cursor: pointer">COPY BTC Value</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

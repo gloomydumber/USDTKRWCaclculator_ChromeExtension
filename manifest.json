@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "TeamLVR USDTKRW Calculator",
+  "version": "1.0",
+  "description": "USDTKRW Exchange rate Calculator for Arbitrage",
+  "permissions": ["activeTab"],
+  "browser_action": {
+    "default_icon": "img/icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_security_policy": "script-src 'self' https://apis.google.com; object-src 'self'"
+}
